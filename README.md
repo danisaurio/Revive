@@ -2,7 +2,7 @@
 
 ## Project topic and description:
 
-Even though the resuscitation of a person is a very critical effort in medicine it still has some very large space for human-error. The algorithm designed by the AHA on its ACLS course constantly changes, there is one high-skilled member of the resuscitation team whose sole responsibility is to write-down times on a whiteboard, and there is no feedback to the team about their performance rates. These things considered, ‘ACLS buddy’ was conceived. ACLS buddy is a mobile app that will assist resuscitation teams on the decision-making process, release one member of the team of his/her current duties, improve the accuracy of the patient’s records, and provide feedback about the outcomes of the efforts.
+Even though the resuscitation of a person is a very critical effort in medicine it still has some very large space for human-error. The algorithm designed by the AHA on its ACLS course constantly changes, there is one high-skilled member of the resuscitation team whose sole responsibility is to write-down times on a whiteboard, and there is no feedback to the team about their performance rates. These things considered, ‘Revive’ was conceived. Revive is a mobile app that will assist resuscitation teams on the decision-making process, release one member of the team of his/her current duties, improve the accuracy of the patient’s records, and provide feedback about the outcomes of the efforts.
 
 ## Quick Start
 
@@ -13,10 +13,10 @@ Open a terminal and follow these instructions:
 
 ```sh
 # clone the repo
-git clone git@github.com:Danisauri/ACLS-buddy.git
+git clone git@github.com:Danisauri/Revive.git
 
 # open the project directory
-cd ACLS-buddy/ACLSbuddy/
+cd Revive/ACLSbuddy/
 
 # install the dependencies of the project
 npm i
@@ -36,6 +36,6 @@ Open the link in your favorite browser, open DevTools and resize the browser to 
 
 - **History:** All the CPRs performed with the app. Each event has a colored icon indicating if the patient's information associated with the event is complete, partially-complete, or empty.
 
-- **Statistics:** Patients statistics depict the characteristics of the population attended by the client. Personal statistics state the general performance of the CPRs performed comparing the net survival rate accomplished by the client VS the projected survival rate for the population treated. 
+- **Statistics:** Patients statistics depict the characteristics of the population attended by the client. 
 
 - **Demo Mode:** Access to the Demo Mode through the menu to get an abbreviated version of the CPR (reduced times to facilitate navigation).
