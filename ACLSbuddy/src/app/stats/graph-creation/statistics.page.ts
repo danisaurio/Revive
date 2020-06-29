@@ -41,9 +41,6 @@ export class StatisticsPage{
     this.generateColorArray();
     this.createRegistersChart();
     this.createPersonalChart();
-    this.createNationalChart();  
-    this.graphcalc.getNationalRegCoef();  
-    this.nationalInformationCard()
     this.selectChart('');
   }
 
@@ -84,15 +81,6 @@ export class StatisticsPage{
 
   }
 
-  async nationalInformationCard(){
-    let surv = await this.graphcalc.returnRatesGraph()
-    if(surv[0] > surv[1]){
-      this.congratulate = true;
-    }
-    else{
-      this.congratulate = false;
-    }
-  }
 
   generateColorArray() {
     this.colorArray.push('#22577A')
@@ -206,32 +194,6 @@ export class StatisticsPage{
         }]
       },
       options: {}
-    });
-  }
-
-  async createNationalChart(){
-    this.nat = new Chart(await this.nationalChart.nativeElement, {
-      type: 'bar',
-      data: {
-        labels: ['Net', 'Projected**'],
-        datasets: [{
-          label:'Percentage',
-          data: await this.graphcalc.returnRatesGraph(),
-          backgroundColor: this.colorArray, 
-          borderColor: 'rgb(38, 194, 129)',
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          yAxes: [{
-              ticks: {
-                  suggestedMin: 0,
-                  suggestedMax: 100
-              }
-          }]
-      }
-      }
     });
   }
 }
