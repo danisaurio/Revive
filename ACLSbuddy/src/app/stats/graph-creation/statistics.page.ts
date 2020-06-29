@@ -146,7 +146,7 @@ export class StatisticsPage{
     this.gender = new Chart(await this.genderChart.nativeElement, {
       type: 'pie',
       data: {
-        labels: ['Femenine', 'Masculine', 'Unespecified'],
+        labels: ['Femenine', 'Masculine', 'Other', 'Unespecified'],
         datasets: [{
           data: await this.graphcalc.getGenderFrecuency(),
           backgroundColor: this.colorArray, 
@@ -159,7 +159,7 @@ export class StatisticsPage{
     this.race = new Chart(await this.raceChart.nativeElement, {
       type: 'pie',
       data: {
-        labels: ['Caucasian', 'Native American', 'African American', 'Asian', 'Pacific Islander', 'Not specified'],
+        labels: ['Caucasian', 'Native American', 'African American', 'Asian', 'Pacific Islander', 'Other', 'Not specified'],
         datasets: [{
           data: await this.graphcalc.getRaceFrecuency(),
           backgroundColor: this.colorArray, 

@@ -94,6 +94,7 @@ export class GraphcalcsService {
     const count = {
       'female':0,
       'male':0,
+      'other':0,
       '':0
     }
     await this.storage.forEach( value => {
@@ -108,6 +109,7 @@ export class GraphcalcsService {
       'african':0,
       'asian':0,
       'islander':0,
+      'other':0,
       '':0
     }
     await this.storage.forEach( value => {
