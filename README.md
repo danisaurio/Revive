@@ -1,4 +1,4 @@
-# Capstone for a Bachelor of Science in Computer Science degree
+# Walk-trough app (AHA guidelines in CPR)
 
 ## Project topic and description:
 
