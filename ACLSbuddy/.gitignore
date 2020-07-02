@@ -29,3 +29,7 @@ npm-debug.log*
 /platforms
 /plugins
 /www
+my-release-key.keystore
+app-release-unsigned.apk
+Revive.apk
+publish commands.md
