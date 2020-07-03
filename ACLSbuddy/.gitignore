@@ -30,6 +30,5 @@ npm-debug.log*
 /plugins
 /www
 my-release-key.keystore
-app-release-unsigned.apk
-Revive.apk
+*.apk
 publish commands.md
